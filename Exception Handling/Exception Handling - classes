@@ -1,0 +1,13 @@
+Write the correct names (from below list) as per following tasks:
+
+Throwable, Exception, default handler, Error, throw
+
+1.) Used to manually throw an exception : throw
+
+2.) Handles the exception when no catch is used : default handler
+
+3.) Related to all the exceptions that cannot be caught : Error
+
+4.) Super class of all exceptional type classes : Throwable
+
+5.) Related to all the exceptions that can be caught by using catch : Exception
