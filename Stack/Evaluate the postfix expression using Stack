@@ -1,0 +1,34 @@
+/* isEmpty(), isFull(), push(int) and int pop() functions available on Stack. */
+
+static int evalPostfix(CQStack s, String exp) {
+  // Write your code here
+    for (int i = 0; i < exp.length(); i++) {
+     char ch = exp.charAt(i);
+        if (Character.isDigit(ch)) {
+            s.push(ch - '0');
+        }
+        else {
+            int b = s.pop();
+            int a = s.pop();
+
+            switch (ch) {
+                case '+':
+                    s.push(a + b);
+                    break;
+                case '-':
+                    s.push(a - b);
+                    break;
+                case '*':
+                    s.push(a * b);
+                    break;
+                case '/':
+                    s.push(a / b);
+                    break;
+                case '^':
+                    s.push((int) Math.pow(a, b));
+                    break;
+            }
+        }
+    }
+    return s.pop();
+}
