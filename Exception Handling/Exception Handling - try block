@@ -1,0 +1,9 @@
+Which of the following is correct? (State Yes / No)
+
+1.) try block need not to be followed by catch block : Yes
+
+2.) try can be followed by both catch and finally block : Yes
+
+3.) try block can be followed by finally block instead of catch block : Yes
+
+4.) try need not to be followed by anything : No
