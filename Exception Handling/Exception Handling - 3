@@ -1,0 +1,63 @@
+What will be the outputs for below codes: (write "Error" if any)
+
+1.)
+class Main
+{
+    public static void main(String args[]) 
+    {
+        int sum=0;
+        try 
+        {
+            int i;
+            sum = 10;
+            for (i = -1; i < 3 ;++i)
+                sum = (sum / i);
+        }
+        catch(ArithmeticException e) 
+        {  } 
+        System.out.print(sum);
+    }
+}
+
+OUTPUT : -10
+
+2.)
+class Main
+{
+    public static void main(String args[]) 
+    {
+        int sum=0;
+        try 
+        {
+            int i;
+            sum = 10;
+            for (i = -2; i < 3 ;++i)
+                sum = (sum / i);
+        }
+        catch(ArithmeticException e) 
+        {  } 
+        System.out.print(sum);
+    }
+}
+
+OUTPUT : 5
+
+3.)
+class Main
+{
+    public static void main(String args[]) 
+    {
+        try 
+        {
+            int i, sum;
+            sum = 10;
+            for (i = -1; i < 3 ;++i)
+                sum = (sum / i);
+        }
+        catch(ArithmeticException e) 
+        {  } 
+        System.out.print(sum);
+    }
+}
+
+OUTPUT : Error
