@@ -1,0 +1,33 @@
+What will be the output of below program: -
+
+class Main
+{
+   
+static int a=0;
+public static int func1(int x, int y)
+{
+  if(y!=1)
+  {
+    if(x!=1)
+    {
+      a++;
+      func1(x>>1,y);
+    }
+    else
+    {
+      y--;
+      func1(256,y);
+    }
+  }
+  return a;
+}
+
+    public static void main(String[] args)
+    {
+        int x;
+ x = func1(256,4);
+        System.out.println(x);
+    }
+}
+
+Correct Answer : 24
