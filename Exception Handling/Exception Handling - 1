@@ -1,0 +1,9 @@
+Write the corresponding keyword used for following tasks:
+
+try, throw, catch
+
+1.) Used to monitor for exceptions : try
+
+2.) Used to handle the exception thrown : catch
+
+3.) Used to manually throw an exception : throw
