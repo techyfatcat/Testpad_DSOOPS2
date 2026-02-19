@@ -1,0 +1,15 @@
+class Result {
+  // Return the minimum number of jumps 
+  static int getMinJumps(long n) {
+    // Write your code here
+       int count = 0;
+
+        while (n > 0) {
+            n = n & (n - 1); 
+            count++;
+        }
+
+        return count;
+
+  }
+}
