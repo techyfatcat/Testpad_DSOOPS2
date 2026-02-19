@@ -1,0 +1,13 @@
+What is the output of this java code?
+
+class Main
+{
+    public static void main(String[] args)
+    {
+        int a = 2;   
+        a = a << 1;
+        System.out.println(a);
+    }
+}
+
+Correct Answer : 4
