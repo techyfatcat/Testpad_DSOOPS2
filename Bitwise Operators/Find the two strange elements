@@ -1,0 +1,22 @@
+class Result {
+
+    static void printStrangeElements(int[] arr, int n) {
+
+        int xor = 0;
+        for (int i = 0; i < n; i++) {
+            xor ^= arr[i];
+        }
+        int setBit = xor & -xor;
+        int x = 0, y = 0;
+        for (int i = 0; i < n; i++) {
+            if ((arr[i] & setBit) != 0)
+                x ^= arr[i];
+            else
+                y ^= arr[i];
+        }
+        if (x < y)
+            System.out.print(x + " " + y);
+        else
+            System.out.print(y + " " + x);
+    }
+}
