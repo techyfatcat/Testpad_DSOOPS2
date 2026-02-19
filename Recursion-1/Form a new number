@@ -1,0 +1,26 @@
+import java.util.Scanner;
+// Do NOT change the class name
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int T = Integer.parseInt(sc.nextLine().trim()); // number of test cases
+        while (T-- > 0) {
+            int n = Integer.parseInt(sc.nextLine().trim());
+            System.out.println(Result.evenDigits(n));
+        }
+    }
+}
+class Result {
+    public static int evenDigits(int n) {
+        if (n == 0) {
+            return 0;
+        }
+        int lastDigit = n % 10;
+        int smallAns = evenDigits(n / 10);
+        if (lastDigit % 2 == 0) {
+            return smallAns * 10 + lastDigit;
+        } else {
+            return smallAns;
+        }
+    }
+}
