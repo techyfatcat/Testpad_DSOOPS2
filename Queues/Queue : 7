@@ -1,0 +1,16 @@
+What the following function will do on a Queue?
+
+
+
+doSomething(Queue Q)
+{
+  int i ;
+  if (Not isEmpty(Q))
+  {
+     i = delete(Q);
+     doSomething(Q);
+     insert(i);
+  }
+}
+
+Correct Answer : Reverse the elements of queue
