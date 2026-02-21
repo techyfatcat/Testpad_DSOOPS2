@@ -1,0 +1,21 @@
+Consider the following pseudo code. What does the following function do?
+
+
+
+void doSomething(int n)
+{
+    Queue q;
+    int i, n1, n2;
+    q.insert(0);
+    q.insert(1);
+    for (i = 0; i < n; i++)
+    {
+        n1 = q.delete();
+        n2 = q.delete();
+        q.insert(n2);
+        q.insert(n1 + n2);
+        print(n1);
+    }
+}
+
+Correct Answer : Prints first n Fibonnaci numbers
