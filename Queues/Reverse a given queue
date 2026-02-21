@@ -1,0 +1,18 @@
+/* 
+class QueueArray
+{
+  static int SIZE=10;
+  static int front=-1;
+  static int rear=-1;
+  static int array[]=new int[SIZE];
+  void enqueue(int item);
+  void dequeue();
+  Abobe is the queue declaration.
+*/
+static void reverseQueue(QueueArray q){
+  // Write your code here
+  if (q.front == -1 || q.front > q.rear) return;
+  int x = q.dequeue();
+  reverseQueue(q);
+  q.enqueue(x);
+}
