@@ -1,0 +1,4 @@
+Which of the following codes will delete the element pointed by X from the doubly linked list, where x does not point to first or last node?
+
+Correct Answer : x->prev->next=x->next;
+                 x->next->prev=x->prev;
